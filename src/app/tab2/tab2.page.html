@@ -1,17 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+	<div class="banniere">
+		<div class="gauche"></div>
+		<div class="droite">
+			<div class="navigation">
+				<ion-icon name="image-outline" class="icon" routerLink="/tabs/tab2/voyage-display"
+					routerLinkActive="clickIcon"></ion-icon>
+				<svg width="2" height="31" viewBox="0 0 2 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="1" y1="4.37114e-08" x2="-1" y2="35" stroke="#DADADA" stroke-width="2" />
+				</svg>
+				<ion-icon name="map-outline" class="icon" routerLink="/tabs/tab2/voyage-map"
+					routerLinkActive="clickIcon"></ion-icon>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<router-outlet></router-outlet>
+	</div>
 </ion-content>

@@ -1,3 +1,4 @@
+import { NavController } from '@ionic/angular';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(public navCtl: NavController) { }
+
+  navigate() {
+    this.navCtl.navigateForward('tabs/tab2/voyage-map');
+  }
+
+  navigateBack() {
+    this.navCtl.navigateForward('tabs/tab2/voyage-display');
+  }
+
 
 }

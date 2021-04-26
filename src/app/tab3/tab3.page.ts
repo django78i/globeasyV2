@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(public navCtl: NavController) { }
+
+  navigate() {
+    this.navCtl.navigateForward('/request-respons');
+  }
+
+  navigateBack() {
+    this.navCtl.navigateBack('tabs/tab3/pref/voyage-display');
+  }
 
 }

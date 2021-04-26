@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,28 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.content {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: white;
+  position: relative;
+  top: -41px;
+  padding: 30px;
+}
+
+.banniere {
+  height: 150px;
+  background: linear-gradient(
+    192.04deg,
+    #25cae5 6.05%,
+    #4c71e5 65.21%,
+    #7b06e5 100%
+  );
+  padding: 10px;
+}
+
+.icon {
+  height: 31px;
+  width: 31px;
+}
